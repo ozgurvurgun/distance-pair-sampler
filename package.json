@@ -1,0 +1,33 @@
+{
+  "name": "distance-pair-sampler",
+  "version": "2.0.0",
+  "description": "CLI for distance-controlled random selection of congruent and incongruent number-pair trials.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozgurvurgun/distance-pair-sampler.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "node scripts/install-githooks.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "tsx": "^4.23.13"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "@vitest/coverage-v8": "^4.1.11",
+    "fast-check": "^4.9.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  },
+  "author": "Özgür Vurgun"
+}
